@@ -23,7 +23,7 @@ class OEmbedLinkPattern(Pattern):
             return None
         else:
             html = "<figure class=\"oembed\">%s</figure>" % html
-            placeholder = self.markdown.htmlStash.store(html, True)
+            placeholder = self.markdown.htmlStash.store(html)
             return placeholder
 
     def get_oembed_html_for_match(self, match):
