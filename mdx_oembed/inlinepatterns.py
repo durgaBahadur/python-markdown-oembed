@@ -32,5 +32,7 @@ class OEmbedLinkPattern(Pattern):
             response = self.consumer.embed(url)
         except oembed.OEmbedNoEndpoint:
             return None
+        except Exception as e:
+            return None
         else:
             return response['html']
