@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import oembed
 
-YOUTUBE = oembed.OEmbedEndpoint('http://www.youtube.com/oembed', [
+YOUTUBE = oembed.OEmbedEndpoint('https://www.youtube.com/oembed', [
     'https?://(*.)?youtube.com/*',
     'https?://youtu.be/*',
 ])
