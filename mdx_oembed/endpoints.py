@@ -18,7 +18,7 @@ FLICKR = oembed.OEmbedEndpoint('http://www.flickr.com/services/oembed/', [
     'https?://*.flickr.com/*',
 ])
 
-VIMEO = oembed.OEmbedEndpoint('http://vimeo.com/api/oembed.json', [
+VIMEO = oembed.OEmbedEndpoint('https://vimeo.com/api/oembed.json', [
     'https?://vimeo.com/*',
 ])
 
