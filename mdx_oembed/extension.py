@@ -17,7 +17,7 @@ class OEmbedExtension(Extension):
         }
         super(OEmbedExtension, self).__init__(**kwargs)
 
-    def extendMarkdown(self, md, md_globals):
+    def extendMarkdown(self, md):
         self.oembed_consumer = self.prepare_oembed_consumer()
         link_pattern = OEmbedLinkPattern(OEMBED_LINK_RE, md,
                                          self.oembed_consumer)
