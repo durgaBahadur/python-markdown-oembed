@@ -13,8 +13,8 @@ OEMBED_LINK_RE = r'\!\[([^\]]*)\]\(((?:https?:)?//[^\)]*)' \
 
 class OEmbedLinkPattern(Pattern):
 
-    def __init__(self, pattern, markdown_instance=None, oembed_consumer=None):
-        Pattern.__init__(self, pattern, markdown_instance)
+    def __init__(self, pattern, md=None, oembed_consumer=None):
+        Pattern.__init__(self, pattern, md=md)
         self.consumer = oembed_consumer
 
     def handleMatch(self, match):
