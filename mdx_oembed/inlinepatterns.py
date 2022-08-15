@@ -19,7 +19,7 @@ class OEmbedLinkPattern(Pattern):
 
     def handleMatch(self, match):
         html = self.get_oembed_html_for_match(match)
-        LOG.info(html)
+        LOG.warn(html)
         if html is None:
             return None
         else:
@@ -29,7 +29,7 @@ class OEmbedLinkPattern(Pattern):
 
     def get_oembed_html_for_match(self, match):
         url = match.group(3).strip()
-        LOG.info(url)
+        LOG.warn(url)
         try:
             response = self.consumer.embed(url)
         except oembed.OEmbedNoEndpoint:
