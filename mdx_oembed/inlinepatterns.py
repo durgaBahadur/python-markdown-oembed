@@ -22,7 +22,7 @@ class OEmbedLinkPattern(Pattern):
         if html is None:
             return None
         else:
-            html = "<figure class=\"oembed\">%s</figure>" % html
+            html = f'<figure class="oembed ratio ratio-16x9">{ html }</figure>'
             placeholder = self.md.htmlStash.store(html)
             return placeholder
 
