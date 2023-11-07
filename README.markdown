@@ -1,30 +1,31 @@
 # Python Markdown oEmbed
 
-[![Build Status](https://travis-ci.org/rennat/python-markdown-oembed.svg?branch=master)](https://travis-ci.org/rennat/python-markdown-oembed)
-
-Markdown extension to allow media embedding using the oEmbed standard.
-
 ## Installation
 
-    pip install python-markdown-oembed
-
-## Usage
-
-    >>> import markdown
-    >>> md = markdown.Markdown(extensions=['oembed'])
-    >>> md.convert('![video](http://www.youtube.com/watch?v=zqnh_YJBvOI)')
-    u'<iframe width="459" height="344" src="http://www.youtube.com/embed/zqnh_YJBvOI?fs=1&feature=oembed" frameborder="0" allowfullscreen></iframe>'
+    pip install from python_markdown-oembed_extension
 
 ## Links
 
-- [python-markdown-oembed](https://github.com/rennat/python-markdown-oembed)
+- [python_markdown-oembed_extension](https://github.com/Hopiu/python-markdown-oembed)
 - [Markdown](http://daringfireball.net/projects/markdown/)
 - [oEmbed](http://www.oembed.com/)
 - [python-oembed](https://github.com/abarmat/python-oembed)
 
-## License
+## Development
 
-A Public Domain work. Do as you wish.
+This project uses flit as packaging tool.
+
+### Install flit
+
+```
+pip install flit
+```
+
+### Build needed packages for project
+
+```
+flit install
+```
 
 ## Changelog
 
@@ -39,3 +40,9 @@ A Public Domain work. Do as you wish.
     - works with modern Markdown (>=2.6)
     - dropped support for python 2.6
 - added support python 3.x
+
+### 0.3.0
+
+- Updated version of [python-markdown-oembed](https://github.com/rennat/python-markdown-oembed)
+- Various small fixes and code modernizations.
+

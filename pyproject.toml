@@ -4,7 +4,7 @@ requires = ["flit_core >=3.8.0,<4"]
 
 [project]
 name = "python_markdown-oembed_extension"
-version = "0.0.0"
+version = "0.3.0"
 authors = [
     {name = "nmc", email = "contact-nmc@unibas.ch"},
 ]
